@@ -3,32 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\carol\\source\\repos\\ca-backend-test\\BillingSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0DC03996-44D9-4855-BED5-733B8F5FE46F}|Solution Items{0DC03996-44D9-4855-BED5-733B8F5FE46F}|C:\\Users\\carol\\source\\repos\\ca-backend-test\\BillingSolution\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{0DC03996-44D9-4855-BED5-733B8F5FE46F}|Solution Items{0DC03996-44D9-4855-BED5-733B8F5FE46F}|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{415FE002-313A-4FEA-BF30-397D17B5D285}|..\\Billing.Infra\\Billing.Infra.csproj|c:\\users\\carol\\source\\repos\\ca-backend-test\\billing.infra\\designtimedbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4FCCAC29-C81C-49D8-A6EB-6D360996632C}|Billing.API.csproj|c:\\users\\carol\\source\\repos\\ca-backend-test\\billingsolution\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4FCCAC29-C81C-49D8-A6EB-6D360996632C}|Billing.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4FCCAC29-C81C-49D8-A6EB-6D360996632C}|Billing.API.csproj|c:\\users\\carol\\source\\repos\\ca-backend-test\\billingsolution\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FCCAC29-C81C-49D8-A6EB-6D360996632C}|Billing.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DB3EEC1-DF2F-409C-97D3-19EC0A69F1CF}|..\\Billing.Domain\\Billing.Domain.csproj|c:\\users\\carol\\source\\repos\\ca-backend-test\\billing.domain\\entities\\billinginformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4FCCAC29-C81C-49D8-A6EB-6D360996632C}|Billing.API.csproj|c:\\users\\carol\\source\\repos\\ca-backend-test\\billingsolution\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FCCAC29-C81C-49D8-A6EB-6D360996632C}|Billing.API.csproj|solutionrelative:controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{415FE002-313A-4FEA-BF30-397D17B5D285}|..\\Billing.Infra\\Billing.Infra.csproj|c:\\users\\carol\\source\\repos\\ca-backend-test\\billing.infra\\data\\billingdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{415FE002-313A-4FEA-BF30-397D17B5D285}|..\\Billing.Infra\\Billing.Infra.csproj|c:\\users\\carol\\source\\repos\\ca-backend-test\\billing.infra\\billing.infra.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FCCAC29-C81C-49D8-A6EB-6D360996632C}|Billing.API.csproj|c:\\users\\carol\\source\\repos\\ca-backend-test\\billingsolution\\billing.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4FCCAC29-C81C-49D8-A6EB-6D360996632C}|Billing.API.csproj|solutionrelative:billing.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FCCAC29-C81C-49D8-A6EB-6D360996632C}|Billing.API.csproj|c:\\users\\carol\\source\\repos\\ca-backend-test\\billingsolution\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4FCCAC29-C81C-49D8-A6EB-6D360996632C}|Billing.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{415FE002-313A-4FEA-BF30-397D17B5D285}|..\\Billing.Infra\\Billing.Infra.csproj|c:\\users\\carol\\source\\repos\\ca-backend-test\\billing.infra\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,112 +25,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "README.md",
-              "DocumentMoniker": "C:\\Users\\carol\\source\\repos\\ca-backend-test\\BillingSolution\\README.md",
-              "RelativeDocumentMoniker": "README.md",
-              "ToolTip": "C:\\Users\\carol\\source\\repos\\ca-backend-test\\BillingSolution\\README.md",
-              "RelativeToolTip": "README.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-07-01T20:58:59.675Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DesignTimeDbContextFactory.cs",
-              "DocumentMoniker": "C:\\Users\\carol\\source\\repos\\ca-backend-test\\Billing.Infra\\DesignTimeDbContextFactory.cs",
-              "RelativeDocumentMoniker": "..\\Billing.Infra\\DesignTimeDbContextFactory.cs",
-              "ToolTip": "C:\\Users\\carol\\source\\repos\\ca-backend-test\\Billing.Infra\\DesignTimeDbContextFactory.cs",
-              "RelativeToolTip": "..\\Billing.Infra\\DesignTimeDbContextFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T20:46:01.481Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\carol\\source\\repos\\ca-backend-test\\BillingSolution\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\carol\\source\\repos\\ca-backend-test\\BillingSolution\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-01T20:45:57.878Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Billing.API",
-              "DocumentMoniker": "C:\\Users\\carol\\source\\repos\\ca-backend-test\\BillingSolution\\Billing.API.csproj",
-              "RelativeDocumentMoniker": "Billing.API.csproj",
-              "ToolTip": "C:\\Users\\carol\\source\\repos\\ca-backend-test\\BillingSolution\\Billing.API.csproj",
-              "RelativeToolTip": "Billing.API.csproj",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-01T20:18:59.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Billing.Infra",
-              "DocumentMoniker": "C:\\Users\\carol\\source\\repos\\ca-backend-test\\Billing.Infra\\Billing.Infra.csproj",
-              "RelativeDocumentMoniker": "..\\Billing.Infra\\Billing.Infra.csproj",
-              "ToolTip": "C:\\Users\\carol\\source\\repos\\ca-backend-test\\Billing.Infra\\Billing.Infra.csproj",
-              "RelativeToolTip": "..\\Billing.Infra\\Billing.Infra.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-01T19:14:03.716Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\carol\\source\\repos\\ca-backend-test\\BillingSolution\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\carol\\source\\repos\\ca-backend-test\\BillingSolution\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T19:09:48.724Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BillingInformation.cs",
-              "DocumentMoniker": "C:\\Users\\carol\\source\\repos\\ca-backend-test\\Billing.Domain\\Entities\\BillingInformation.cs",
-              "RelativeDocumentMoniker": "..\\Billing.Domain\\Entities\\BillingInformation.cs",
-              "ToolTip": "C:\\Users\\carol\\source\\repos\\ca-backend-test\\Billing.Domain\\Entities\\BillingInformation.cs",
-              "RelativeToolTip": "..\\Billing.Domain\\Entities\\BillingInformation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T19:06:53.532Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BillingDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\carol\\source\\repos\\ca-backend-test\\Billing.Infra\\Data\\BillingDbContext.cs",
-              "RelativeDocumentMoniker": "..\\Billing.Infra\\Data\\BillingDbContext.cs",
-              "ToolTip": "C:\\Users\\carol\\source\\repos\\ca-backend-test\\Billing.Infra\\Data\\BillingDbContext.cs",
-              "RelativeToolTip": "..\\Billing.Infra\\Data\\BillingDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T19:05:14.054Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -171,6 +54,58 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\carol\\source\\repos\\ca-backend-test\\BillingSolution\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\carol\\source\\repos\\ca-backend-test\\BillingSolution\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-03T14:33:17.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\carol\\source\\repos\\ca-backend-test\\Billing.Infra\\Repositories\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "..\\Billing.Infra\\Repositories\\CustomerRepository.cs",
+              "ToolTip": "C:\\Users\\carol\\source\\repos\\ca-backend-test\\Billing.Infra\\Repositories\\CustomerRepository.cs",
+              "RelativeToolTip": "..\\Billing.Infra\\Repositories\\CustomerRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T14:19:24.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\carol\\source\\repos\\ca-backend-test\\BillingSolution\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\carol\\source\\repos\\ca-backend-test\\BillingSolution\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABcAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T22:06:38.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomersController.cs",
+              "DocumentMoniker": "C:\\Users\\carol\\source\\repos\\ca-backend-test\\BillingSolution\\Controllers\\CustomersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CustomersController.cs",
+              "ToolTip": "C:\\Users\\carol\\source\\repos\\ca-backend-test\\BillingSolution\\Controllers\\CustomersController.cs",
+              "RelativeToolTip": "Controllers\\CustomersController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T22:06:54.516Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -8,7 +8,9 @@
     ".NETCoreApp,Version=v8.0": {
       "Billing.API/1.0.0": {
         "dependencies": {
+          "Billing.Application": "1.0.0",
           "Billing.Infra": "1.0.0",
+          "FluentAssertions": "8.4.0",
           "Microsoft.EntityFrameworkCore.Design": "9.0.0",
           "Swashbuckle.AspNetCore": "6.6.2"
         },
@@ -48,6 +50,14 @@
           "lib/netstandard2.0/Azure.Identity.dll": {
             "assemblyVersion": "1.11.4.0",
             "fileVersion": "1.1100.424.31005"
+          }
+        }
+      },
+      "FluentAssertions/8.4.0": {
+        "runtime": {
+          "lib/net6.0/FluentAssertions.dll": {
+            "assemblyVersion": "8.4.0.0",
+            "fileVersion": "8.4.0.0"
           }
         }
       },
@@ -1080,6 +1090,17 @@
           }
         }
       },
+      "Billing.Application/1.0.0": {
+        "dependencies": {
+          "Billing.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Billing.Application.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Billing.Domain/1.0.0": {
         "runtime": {
           "Billing.Domain.dll": {
@@ -1122,6 +1143,13 @@
       "sha512": "sha512-Sf4BoE6Q3jTgFkgBkx7qztYOFELBCo+wQgpYDwal/qJ1unBH73ywPztIJKXBXORRzAeNijsuxhk94h0TIMvfYg==",
       "path": "azure.identity/1.11.4",
       "hashPath": "azure.identity.1.11.4.nupkg.sha512"
+    },
+    "FluentAssertions/8.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EL0ckSJMGfJTiDF0EFU48bV/iIsgFKCaHEpp5LxqjNO0RhfF3WxQuNWosX2L/Xwt8VRRLE8TgN4tSzTTiZAfdA==",
+      "path": "fluentassertions/8.4.0",
+      "hashPath": "fluentassertions.8.4.0.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -1696,6 +1724,11 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "Billing.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Billing.Domain/1.0.0": {
       "type": "project",

@@ -1,7 +1,4 @@
-﻿
-using Billing.Domain.Entities;
-
-namespace Billing.Domain.Interfaces;
+﻿namespace Billing.Domain.Interfaces;
 
 public interface IRespository<T> where T : class
 {
