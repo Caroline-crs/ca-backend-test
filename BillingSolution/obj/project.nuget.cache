@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tvd9z1drYAE=",
+  "dgSpecHash": "BcKSNZxOLG8=",
   "success": true,
   "projectFilePath": "C:\\Users\\carol\\source\\repos\\ca-backend-test\\BillingSolution\\Billing.API.csproj",
   "expectedPackageFiles": [
@@ -51,6 +51,9 @@
     "C:\\Users\\carol\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\carol\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\carol\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
+    "C:\\Users\\carol\\.nuget\\packages\\polly\\8.6.1\\polly.8.6.1.nupkg.sha512",
+    "C:\\Users\\carol\\.nuget\\packages\\polly.core\\8.6.1\\polly.core.8.6.1.nupkg.sha512",
+    "C:\\Users\\carol\\.nuget\\packages\\polly.extensions.http\\3.0.0\\polly.extensions.http.3.0.0.nupkg.sha512",
     "C:\\Users\\carol\\.nuget\\packages\\swashbuckle.aspnetcore\\6.6.2\\swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
     "C:\\Users\\carol\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.6.2\\swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
     "C:\\Users\\carol\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.6.2\\swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",

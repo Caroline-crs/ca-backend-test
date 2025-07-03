@@ -19,4 +19,6 @@ public interface IBillingService
     /// Lista faturas por cliente
     /// </summary>
     Task<List<BillingInformation>> GetBillingsByCustomerAsync(Guid customerId);
+    Task<ImportResult> ImportExternalBillingsAsync();
+
 }

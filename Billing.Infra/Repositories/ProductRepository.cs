@@ -10,9 +10,11 @@ public class ProductRepository : IProductRepository
     private readonly BillingDbContext _context;
 
     public ProductRepository(BillingDbContext context) => _context = context;
-    public async Task AddAsync(Product product)
+    public async Task<Product> AddProductAsync(Product product)
     {
         await _context.Products.AddAsync(product);
+        await _context.SaveChangesAsync();
+        return product;
     }
     public async Task<List<Product>> GetAllProductsAsync()
     {
@@ -22,18 +24,14 @@ public class ProductRepository : IProductRepository
     {
         return await _context.Products.FindAsync(id);
     }
-    public void Update(Product product)
+    public async Task UpdateProductAsync(Product product)
     {
         _context.Entry(product).State = EntityState.Modified;
+        await _context.SaveChangesAsync();
     }
-    public void Delete(Product product)
+    public async Task Delete(Product product)
     {
         _context.Products.Remove(product);
-    }
-    public Task SaveChangesAsync()
-    {
-        throw new NotImplementedException();
-    }
-
-    
+        await _context.SaveChangesAsync();
+    }    
 }

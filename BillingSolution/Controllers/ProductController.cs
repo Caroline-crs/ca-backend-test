@@ -1,4 +1,6 @@
-﻿using Billing.Domain.Interfaces;
+﻿using Billing.Application.Services;
+using Billing.Domain.Entities;
+using Billing.Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 namespace Billing.API.Controllers;
 
@@ -10,12 +12,23 @@ public class ProductController : ControllerBase
 
     public ProductController(IProductService productService) => _productService = productService;
 
-	[HttpGet]
+    [HttpPost]
+    public async Task<IActionResult> CreateProduct([FromBody] Product product)
+    {
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+
+        var createProduct = await _productService.CreateProductAsync(product);
+
+        return CreatedAtAction(nameof(GetProductById), new { id = product.Id }, product);
+    }
+
+    [HttpGet]
 	public async Task<IActionResult> GetAllProducts()
 	{
 		try
 		{
-			var products = _productService.GetAllProductsAsync();
+			var products = await _productService.GetAllProductsAsync();
 			return Ok(products);
 		}
 		catch (Exception ex)
@@ -36,5 +49,22 @@ public class ProductController : ControllerBase
 		{
 			return NotFound(ex.Message);
 		}
+    }
+    [HttpPut("{id}")]
+    public async Task<IActionResult> UpdateProduct(Guid id, [FromBody] Product product)
+    {
+        if (id != product.Id) return BadRequest();
+
+        await _productService.UpdateProductAsync(id, product);
+
+        return NoContent();
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteProduct(Guid id)
+    {
+        await _productService.DeleteProductAsync(id);
+
+        return NoContent();
     }
 }

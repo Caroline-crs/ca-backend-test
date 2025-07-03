@@ -15,6 +15,29 @@ public class BillingsController : ControllerBase
         _billingService = billingService;
     }
 
+    [HttpPost]
+    public async Task<IActionResult> ImportExternalBillings()
+    {
+        try
+        {
+            var result = await _billingService.ImportExternalBillingsAsync();
+            return Ok(new
+            {
+                Success = true,
+                ImportedCount = result.ImportedBillingsInformation.Count,
+                Errors = result.Errors
+            });
+        }
+        catch (ApplicationException ex) when (ex.InnerException is HttpRequestException)
+        {
+            return StatusCode(503, new
+            {
+                Success = false,
+                Message = "External API out temporary."
+            });
+        }
+    }
+
     [HttpPost("import")]
     public async Task<IActionResult> Import([FromBody] BillingInformationImportDto dto)
     {

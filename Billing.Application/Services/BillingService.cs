@@ -9,15 +9,18 @@ public class BillingService : IBillingService
     private readonly IBillingRepository _billingRepository;
     private readonly ICustomerService _customerService;
     private readonly IProductService _productService;
+    private readonly IExternalBillingInformationApiService _externalBillingInformationApiService;
 
     public BillingService(
         IBillingRepository billingRepository, 
         ICustomerService customerService, 
-        IProductService productService)
+        IProductService productService,
+        IExternalBillingInformationApiService externalBillingInformationApiService)
     {
         _billingRepository = billingRepository;
         _customerService = customerService;
         _productService = productService;
+        _externalBillingInformationApiService = externalBillingInformationApiService;
     }
 
     public async Task<BillingInformation> ImportBillingAsync(BillingInformationImportDto dto)
@@ -55,6 +58,29 @@ public class BillingService : IBillingService
     {
         return await _billingRepository.GetByIdAsync(id); 
     }
+    public async Task<ImportResult> ImportExternalBillingsAsync()
+    {
+        var externalBillings = await _externalBillingInformationApiService.GetAllExternalBillingInformationAsync();
+        var result = new ImportResult();
 
-    
+        foreach (var externalBilling in externalBillings)
+        {
+            try
+            {
+                var billing = await ImportBillingAsync(new BillingInformationImportDto(
+                    externalBilling.CustomerId,
+                    externalBilling.ProductId,
+                    externalBilling.Price,
+                    externalBilling.Quantity
+                 ));
+
+                result.ImportedBillingsInformation.Add(billing);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                result.Errors.Add($"Import failed: {externalBilling.id}: {ex.Message}");
+            }
+        }
+        return result;
+    }
 }
