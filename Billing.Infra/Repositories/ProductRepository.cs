@@ -29,9 +29,14 @@ public class ProductRepository : IProductRepository
         _context.Entry(product).State = EntityState.Modified;
         await _context.SaveChangesAsync();
     }
-    public async Task Delete(Product product)
+    public async Task DeleteProductAsync(Guid id)
     {
-        _context.Products.Remove(product);
-        await _context.SaveChangesAsync();
-    }    
+        var product = await _context.Products.FindAsync(id);
+        
+        if (product != null)
+        {
+            _context.Products.Remove(product);
+            await _context.SaveChangesAsync();
+        }
+    }
 }

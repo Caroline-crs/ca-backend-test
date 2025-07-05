@@ -286,17 +286,21 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
+            "Microsoft.Extensions.Http.Polly": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Polly": {
               "target": "Package",
-              "version": "[8.6.1, )"
-            },
-            "Polly.Extensions.Http": {
-              "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[8.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[9.0.1, )"
             }
           },
           "imports": [

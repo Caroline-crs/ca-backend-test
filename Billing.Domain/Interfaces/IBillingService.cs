@@ -19,6 +19,21 @@ public interface IBillingService
     /// Lista faturas por cliente
     /// </summary>
     Task<List<BillingInformation>> GetBillingsByCustomerAsync(Guid customerId);
+
+    /// <summary>
+    /// Altera fatura por ID
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
+    Task<bool> UpdateBillingInformationAsync(Guid id, BillingInformationImportDto dto);
+
+    /// <summary>
+    /// Deleta fatura por ID 
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
+    Task<bool> DeleteBillingInformationAsync(Guid id);
+
     Task<ImportResult> ImportExternalBillingsAsync();
 
 }

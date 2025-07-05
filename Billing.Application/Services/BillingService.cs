@@ -12,8 +12,8 @@ public class BillingService : IBillingService
     private readonly IExternalBillingInformationApiService _externalBillingInformationApiService;
 
     public BillingService(
-        IBillingRepository billingRepository, 
-        ICustomerService customerService, 
+        IBillingRepository billingRepository,
+        ICustomerService customerService,
         IProductService productService,
         IExternalBillingInformationApiService externalBillingInformationApiService)
     {
@@ -56,7 +56,7 @@ public class BillingService : IBillingService
     }
     public async Task<BillingInformation> GetBillingByIdAsync(Guid id)
     {
-        return await _billingRepository.GetByIdAsync(id); 
+        return await _billingRepository.GetByIdAsync(id);
     }
     public async Task<ImportResult> ImportExternalBillingsAsync()
     {
@@ -82,5 +82,39 @@ public class BillingService : IBillingService
             }
         }
         return result;
+    }
+
+    public async Task<bool> UpdateBillingInformationAsync(Guid id, BillingInformationImportDto dto)
+    {
+        var billing = await _billingRepository.GetByIdAsync(id);
+        if (billing == null) return false;
+
+        var customerExists = await _customerService.GetCustomerByIdAsync(dto.CustomerId) != null;
+        var productExists = await _productService.GetProductByIdAsync(dto.ProductId) != null;
+
+        if (!customerExists || !productExists)
+        {
+            throw new KeyNotFoundException(
+                !customerExists ? "Cliente não encontrado" : "Produto não encontrado");
+        }
+
+        billing.CustomerId = dto.CustomerId;
+        billing.Lines = new List<BillingLine>
+        {
+            new()
+            {
+                Id = Guid.NewGuid(),
+                ProductId = dto.ProductId,
+                Price = dto.Price,
+                Quantity = dto.Quantity
+            }
+        };
+
+        return await _billingRepository.UpdateAsync(billing);
+    }
+
+    public async Task<bool> DeleteBillingInformationAsync(Guid id)
+    {
+        return await _billingRepository.DeleteAsync(id);
     }
 }

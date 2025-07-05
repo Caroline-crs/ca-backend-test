@@ -4,16 +4,13 @@ using Billing.Domain.Interfaces;
 using Billing.Infra.Data;
 using Billing.Infra.Repositories;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Polly;
 using Polly.Extensions.Http;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
 builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+
 
 //Repositories
 builder.Services.AddDbContext<BillingDbContext>(options =>
@@ -35,14 +32,12 @@ builder.Services.AddHttpClient<IExternalBillingInformationApiService, ExternalBi
 builder.Services.Configure<ExternalApiConfig>(
     builder.Configuration.GetSection(ExternalApiConfig.SectionName));
 
-// HttpClient com políticas de resiliência
 builder.Services.AddHttpClient<ExternalBillingApiService>(client =>
 {
     client.Timeout = TimeSpan.FromSeconds(30);
 })
 .AddPolicyHandler(GetRetryPolicy());
 
-// Método auxiliar para política de retry
 static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
 {
     return HttpPolicyExtensions

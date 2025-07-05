@@ -30,4 +30,19 @@ public class BillingRepository : IBillingRepository
          .AsNoTracking()
          .ToListAsync();
     }
+
+    public async Task<bool> UpdateAsync(BillingInformation billing)
+    {
+        _context.Billings.Update(billing);
+        return await _context.SaveChangesAsync() > 0;
+    }
+
+    public async Task<bool> DeleteAsync(Guid id)
+    {
+        var billing = await _context.Billings.FindAsync(id);
+        if (billing == null) return false;
+
+        _context.Billings.Remove(billing);
+        return await _context.SaveChangesAsync() > 0;
+    }
 }
